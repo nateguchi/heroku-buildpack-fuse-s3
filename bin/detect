@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-
-exit 0
+if 1 then 
+	exit 0
+fi
