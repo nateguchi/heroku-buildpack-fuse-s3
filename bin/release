@@ -1,5 +1,12 @@
-#!/usr/bin/env bash
 
-cat <<EOF
+#!/bin/sh
+
+build_dir=$1
+cache_dir=$2
+
+cat << EOF
 ---
+config_vars:
+  PATH: "/usr/bin:/usr/local/bin:/app/bin:$HOME/s3fs/usr/local/bin:$PATH"
+
 EOF
